@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 namespace ibrahimEzzat_C42_EngyoussefZakriaa_MVC02
 {
     public class Program
@@ -5,10 +7,11 @@ namespace ibrahimEzzat_C42_EngyoussefZakriaa_MVC02
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddControllers();
             var app = builder.Build();
             app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
+            #region Routing and parameter get
+            /*app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/Home", async context =>
                 {
@@ -16,13 +19,13 @@ namespace ibrahimEzzat_C42_EngyoussefZakriaa_MVC02
                 });
             });
 
-        /*    app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/Product", async context =>
-                {
-                    await context.Response.WriteAsync("Hello from Product page!");
-                });
-            });*/
+          // app.UseEndpoints(endpoints =>
+           // {
+              //  endpoints.MapGet("/Product", async context =>
+               // {
+                //    await context.Response.WriteAsync("Hello from Product page!");
+              //  });
+          //  });
 
             app.UseEndpoints(endpoints =>
             {
@@ -51,8 +54,14 @@ namespace ibrahimEzzat_C42_EngyoussefZakriaa_MVC02
                     string name = context.Request.RouteValues["Author"].ToString();
                     await context.Response.WriteAsync($"Hello from Books page id => {id} name=>{name}");
                 });
-            });
-            app.Run(async (HttpContext) => { await HttpContext.Response.WriteAsync("Your Requsted Page Not Found !!"); });
+            });*/
+            #endregion
+            app.MapControllerRoute(
+                name :"default",
+                pattern : "/{Controller =Home}/{Action = Index }",
+                defaults: new { Controller = "Home", Action = "AboutUs" } 
+                );
+            //app.Run(async (HttpContext) => { await HttpContext.Response.WriteAsync("Your Requsted Page Not Found !!"); });
             // app.MapGet("/", () => "Hello World!");
 
             app.Run();

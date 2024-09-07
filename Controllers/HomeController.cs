@@ -4,9 +4,9 @@ namespace ibrahimEzzat_C42_EngyoussefZakriaa_MVC02.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ActionResult Index()
         {
-            return "this is index action";
+            return Content("this is index action");
         }
 
         public string AboutUs()

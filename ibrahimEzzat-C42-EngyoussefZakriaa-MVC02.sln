@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ibrahimEzzat-C42-EngyoussefZakriaa-MVC02", "ibrahimEzzat-C42-EngyoussefZakriaa-MVC02.csproj", "{4FFB29C7-99C1-4B8B-933D-33EEBBE188D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ibrahimEzzat-C42-EngyoussefZakriaa-MVC02(.net5)", "..\ibrahimEzzat-C42-EngyoussefZakriaa-MVC02(.net5)\ibrahimEzzat-C42-EngyoussefZakriaa-MVC02(.net5).csproj", "{4FC14F6C-1F35-4C8A-B2D7-75CFD3A1F836}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4FFB29C7-99C1-4B8B-933D-33EEBBE188D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FFB29C7-99C1-4B8B-933D-33EEBBE188D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FFB29C7-99C1-4B8B-933D-33EEBBE188D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC14F6C-1F35-4C8A-B2D7-75CFD3A1F836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC14F6C-1F35-4C8A-B2D7-75CFD3A1F836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC14F6C-1F35-4C8A-B2D7-75CFD3A1F836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC14F6C-1F35-4C8A-B2D7-75CFD3A1F836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
